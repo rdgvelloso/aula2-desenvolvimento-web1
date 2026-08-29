@@ -8,45 +8,145 @@
     </head>
     
     <body>
-        <h1>Aula 1</h1>
-        <h2>Parágrafos</h2>
-        <p>Este é um parágrafo</p>
-        <p>Este é outro parágrafo.</p>
+        
+        <header>
+            <h1>Aula 1</h1>
+        </header>
 
-        <h2>Listas</h2>
-        <h3>Lista não ordenada</h3>
-        <ul>
-            <li>Primeiro item</li>
-            <li>Segundo item</li>
-            <li>Terceiro item(outra lista)
+        <nav>
+            <h2>Navegação</h2>
+            <ul>
+                <li><a href="#paragrafo">Paragrafo</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#imagens">Imagens</a></li>
+                <li><a href="#tabelas">Tabelas</a></li>
+                <li><a href="#div">Div</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section id="paragrafo">
+                <h2>Parágrafos</h2>
+                <p>Este é um parágrafo</p>
+                <p>Este é outro parágrafo.</p>
+            </section>
+            
+            <section id="listas">
+                <h2>Listas</h2>
+                <h3>Lista não ordenada</h3>
                 <ul>
-                    <li>Primeiro item segunda lista</li>
-                    <li>Segundo item segunda lista</li>
+                    <li>Primeiro item</li>
+                    <li>Segundo item</li>
+                    <li>Terceiro item(outra lista)
+                        <ul>
+                            <li>Primeiro item segunda lista</li>
+                            <li>Segundo item segunda lista</li>
+                        </ul>
+                    </li>
+                    <li>Quarto item</li>
                 </ul>
-            </li>
-            <li>Quarto item</li>
-        </ul>
-        <h3>Lista ordenada</h3>
-        <ol>
-            <li>Primeiro item</li>
-            <li>Segundo item</li>
-        </ol>
-        <h3>Lista de Definição</h3>
-        <dl>
-            <dt>Aula 1</dt>
-            <dd>Git e Github</dd>
-            <dt>Aula 2</dt>
-            <dd>Git</dd>
-            <dd>Estrutura HTML</dd>
-        </dl>
+                <h3>Lista ordenada</h3>
+                <ol>
+                    <li>Primeiro item</li>
+                    <li>Segundo item</li>
+                </ol>
+                <h3>Lista de Definição</h3>
+                <dl>
+                    <dt>Aula 1</dt>
+                    <dd>Git e Github</dd>
+                    <dt>Aula 2</dt>
+                    <dd>Git</dd>
+                    <dd>Estrutura HTML</dd>
+                </dl>
+            </section>
 
-        <h2>Links</h2>
-        <a href="http://www.google.com" target="_blank">Site Google</a>
-        <a href="Imagens/maomao.png" target="_blank">Imagem Maomao</a>
-        <a href="Imagens/frieren.jpg" target="_blank">Imagem Frieren</a>
+            <section id="links">
+                <h2>Links</h2>
+                <a href="http://www.google.com" target="_blank">Site Google</a>
+                <a href="Imagens/maomao.png" target="_blank">Imagem Maomao</a>
+                <a href="Imagens/frieren.jpg" target="_blank">Imagem Frieren</a>
+            </section>
 
-        <h2>Imagens</h2>
-        <img src="Imagens/frieren-cinema.gif" alt="gif meme absolute frieren">
+            <section id="imagens">
+                <h2>Imagens</h2>
+                <img src="Imagens/frieren-cinema.gif" alt="gif meme absolute frieren" width="200" height="200">
+            </section>
+
+            <section id="tabelas">
+                <h2>Tabelas</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                Perfil
+                            </th>
+                            <th scope="col">
+                                Nome
+                            </th>
+                            <th scope="col">
+                                Sobrenome
+                            </th>
+                            <th scope="col">
+                                Idade
+                            </th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">
+                                Aluno
+                            </td>
+                            <td>
+                                Maria
+                            </td>
+                            <td>
+                                Silva
+                            </td>
+                            <td>
+                                25
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                José
+                            </td>
+                            <td>
+                                Souza
+                            </td>
+                            <td>
+                                30
+                            </td>
+                        </tr>
+                    </tbody>
+                
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="3">
+                                Total
+                            </th>
+                            <td>
+                                55
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="div">
+                <h2>Div</h2>
+                <div>
+                    <p>Teste</p>
+                    <p>Outro</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Aula Desenvolvimento Web I</p>
+        </footer>
     </body>
 
 </html>
