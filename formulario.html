@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Formulários</title>
+
+    </head>
+
+    <body>
+
+        <a href="index.html">Home Page</a>
+        <br><br>
+
+        <form action="" method="GET" enctype="multipart/form-data">
+
+            <label for="id_nome">Nome *</label><br>
+            <input id="id_nome" name="nome" required minlength="4" maxlength="10">
+            <br><br>
+
+            <label for="id_idade">Idade *</label><br>
+            <input type="number" id="id_idade" name="idade" required min="0" max="200">
+            <br><br>
+
+            <label for="id_nascimento">Data de Nascimento *</label><br>
+            <input type="date" id="id_nascimento" name="nascimento" required max="2026-09-05">
+            <br><br>
+
+            <label for="id_hora">Hora</label><br>
+            <input type="time" id="id_hora" name="hora" min="09:00" max="17:00">
+            <br><br>
+
+            <label for="id_datetime">Data e Hora</label><br>
+            <input type="datetime-local" id="id_datetime" name="datatime" min="2026-09-05T12:00">
+            <br><br>
+
+            <label for="id_range">Range</label><br>
+            <input type="range" id="id_range" name="range" required min="0" max="10" step="2"> 
+            <br><br>
+
+            <label for="id_url">URL</label><br>
+            <input type="url" id="id_url" name="url">
+            <br><br>
+
+            <label for="id_tel">Telefone</label><br>
+            <input type="tel" id="id_tel" name="telefone">
+            <br><br>
+
+            <input type="checkbox" id="id_acordo" name="acordo" value="S">
+            <label for="id_acordo">Estou de acordo</label>
+            <br><br>
+
+            <input type="radio" id="id_radio1" name="radio" value="r1">
+            <label for="id_radio1">Radio 1</label><br>
+            <input type="radio" id="id_radio2" name="radio" value="r2">
+            <label for="id_radio2">Radio 2</label><br>
+            <input type="radio" id="id_radio3" name="radio" value="r3">
+            <label for="id_radio3">Radio 3</label><br>
+            <br><br>
+
+            <label for="id_senha">Senha *</label><br>
+            <input type="password" id="id_senha" name="senha" pattern=".{8,}" required>
+            <br><br>
+
+            <label for="id_email">Email *</label><br>
+            <input type="email" id="id_email" name="email" required>
+            <br><br>    
+
+            <label for="id_resumo">Resumo</label>
+            <textarea id="id_resumo" name="resumo" rows="10" cols="20" placeholder="Escreva aqui!"></textarea>
+            <br><br>
+
+            <label for="id_cidade">Cidade *</label><br>
+            <select id="id_cidade" name="cidade" required>
+                <option></option>
+                <option value="A">Araras</option>
+                <option value="L">Leme</option>
+                <option value="R">Rio Claro</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </body>
+
+</html>
