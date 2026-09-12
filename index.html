@@ -5,6 +5,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aula2_DesenvolvimentoWeb</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            h2{
+                color: rgb(150, 98, 245) !important;
+                background-color: burlywood;
+                text-align: center;
+                text-decoration: underline;
+                justify-content: center;
+            }
+        </style>
+
     </head>
     
     <body>
@@ -13,7 +26,7 @@
             <h1>Aula 1</h1>
         </header>
 
-        <nav>
+        <nav id="menu" class="fundo-verde">
             <h2>Navegação</h2>
             <ul>
                 <li><a href="#paragrafo">Paragrafo</a></li>
@@ -26,8 +39,8 @@
         </nav>
         
         <main>
-            <section id="paragrafo">
-                <h2>Parágrafos</h2>
+            <section id="paragrafo" class="fundo-verde">
+                <h2 style = "color: blue; underline;">Parágrafos</h2>
                 <p>Este é um parágrafo</p>
                 <p>Este é outro parágrafo.</p>
             </section>
@@ -144,6 +157,13 @@
                     <p>Teste</p>
                     <p>Outro</p>
                 </div>
+
+                <div style="display: block; color: white; background-color: blue; height: 50px; width: 100px;">Block teste</div>
+                <div style="display: inline; color: white; background-color: red; height: 50px;">Inline teste</div>
+                <div style="display: inline-block; color: white; background-color: blue; height: 50px; width: 100px;">Inline-block teste</div>
+                <!--None está no código fonte do site, mas não aparece na página. 
+                    Normalmente utilizado em conjunto com JS para interações, aparece após algum comando-->
+                <div style="display: none;color: white; background-color: red; height: 50px;">none teste</div> 
             </section>
 
         </main>
