@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox</title>
+
+        <style>
+            
+            #flex-row{
+                background-color: gray;
+                display: flex;
+                height: 300px;
+                flex-direction: row;
+                gap: 50px;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            #flex-column{
+                background-color: gray;
+                display: flex;
+                height: 200px;
+                flex-direction: column;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .flex-item{
+                background-color: yellow;
+                width: 50px;
+                height: 50px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        
+        <h1>Flexbox Row</h1>
+            <div id="flex-row">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+                <div class="flex-item">7</div>
+                <div class="flex-item">8</div>
+                <div class="flex-item">9</div>
+                <div class="flex-item">10</div>
+                <div class="flex-item">11</div>
+                <div class="flex-item">12</div>
+                <div class="flex-item">13</div>
+                <div class="flex-item">14</div>
+                <div class="flex-item">15</div>
+                <div class="flex-item">16</div>
+                <div class="flex-item">17</div>
+                <div class="flex-item">18</div>
+                <div class="flex-item">19</div>
+                <div class="flex-item">20</div>
+                <div class="flex-item">21</div>
+            </div>
+
+            <h1>Flexbox Column</h1>
+            <div id="flex-column">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+                <div class="flex-item">7</div>
+                <div class="flex-item" style="background-color: burlywood;">8</div>
+                <div class="flex-item">9</div>
+                <div class="flex-item">10</div>
+                <div class="flex-item">11</div>
+                <div class="flex-item">12</div>
+                <div class="flex-item" style="background-color: pink;">13</div>
+                <div class="flex-item">14</div>
+                <div class="flex-item">15</div>
+                <div class="flex-item">16</div>
+                <div class="flex-item">17</div>
+                <div class="flex-item">18</div>
+                <div class="flex-item">19</div>
+                <div class="flex-item">20</div>
+                <div class="flex-item">21</div>
+            </div>
+
+
+    </body>
+
+</html>
