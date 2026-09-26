@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>Grid Layout</title>
+
+        <style>
+
+            #grid{
+                display: grid;
+                grid-template-columns: 100px 3fr 1fr;
+                grid-template-rows: 100px 40px auto 100px;
+                gap: 20px;
+                grid-template-areas:
+                        "cabecalho cabecalho cabecalho"
+                        "nav-p nav-p nav-p"
+                        "nav-s conteu publi"
+                        "rodape rodape rodape";
+                min-height: 100vh;
+            }            
+
+            header{
+                border-width: 1px;
+                border-style: solid;
+                grid-area: cabecalho;
+            }
+
+            footer{
+                border-width: 1px;
+                border-style: solid;
+                grid-area: rodape;
+            }
+
+            nav{
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            div{
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            #nav-principal{
+                grid-area: nav-p;
+                display: flex;
+                flex-direction: row;
+            }
+
+            
+            #nav-principal ul{
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+            }
+
+            #nav-secundario{
+                grid-area: nav-s;
+            }
+
+            #conteudo{
+                grid-area: conteu;
+                justify-content: center;
+                text-align: center  ;
+            }
+
+            #publicidade{
+                grid-area: publi;
+            }
+
+
+        </style>
+
+    </head>
+    
+    <body>
+        
+        <div id="grid">
+
+            <header>
+                <h1>Grid Layout</h1>
+            </header>
+            
+            <nav id="nav-principal">
+                <ul>
+                    <li>Home</li>
+                    <li>Contato</li>
+                    <li>Cadastro</li>
+                </ul>
+            </nav>
+
+            <nav id="nav-secundario">
+                <ul>
+                    <li>Novo</li>
+                    <li>Editar</li>
+                </ul>
+            </nav>
+
+            <div id="conteudo">
+                <p>Nosso conteudo</p>
+            </div>
+
+            <div id="publicidade">
+                <p>Publicidades</p>
+            </div>
+
+            <footer>
+                <h2>Rodapé</h2>
+            </footer>
+
+        </div>
+
+    </body>
+
+</html>
